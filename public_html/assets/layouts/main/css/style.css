@@ -1,0 +1,141 @@
+/*
+ ██████╗ ███████╗██╗   ██╗███████╗██╗     ██████╗  ██████╗ ██╗  ██╗ ©
+ ██╔══██╗██╔════╝██║   ██║██╔════╝██║     ██╔══██╗██╔═══██╗╚██╗██╔╝
+ ██║  ██║█████╗  ██║   ██║█████╗  ██║     ██████╔╝██║   ██║ ╚███╔╝ 
+ ██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██╔══██╗██║   ██║ ██╔██╗ 
+ ██████╔╝███████╗ ╚████╔╝ ███████╗███████╗██║  ██║╚██████╔╝██╔╝ ██╗
+ ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+
+ Diseño creado por DevelR0X © 2020.
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans';
+    background-color: #fff;
+}
+
+a, a:hover, a:focus{
+    color: #486079;
+}
+
+.text-primary{
+    color: #486079 !important;
+}
+
+.text-info{
+    color: #0b7db5 !important;
+}
+
+.btn-outline-secondary{
+    color: #6aa3b6;
+    border-color: #6aa3b6;
+}
+
+.logo{
+    font-family: 'Roboto Mono', Arial;
+}
+
+.logo > span{
+    color: #6ebbcc;
+    font-weight: 600;
+}
+
+footer .logo{
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+
+footer .text-secondary{
+    line-height: 34px;
+}
+
+.header-block{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #444;
+    color: #eee;
+}
+
+.header-block .header-top .logo{
+    font-size: 37px;
+    line-height: 22px;
+}
+
+.header-block .header-top > div:nth-child(-n+3){
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.header-block .header-top > div:nth-child(n+2){
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-block .navbar{
+    background-color: #2d5c6f;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.header-block .navbar .flex-row > li{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-block .navbar .flex-row > li:nth-child(n+2){
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-block .navbar .flex-row > li:last-child{
+    padding-right: 0;
+}
+
+.header-content
+{
+    padding: 200px 50px;
+}
+
+.jumbotron-icons .row > div:nth-child(n+2){
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.jumbotron-icons-rounded i{
+    background-color: #486079;
+    color: #fafafa;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+}
+
+.jumbotron-bg-light{
+    background-color: transparent;
+}
+
+.navbar-brand{
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 991px){
+    
+    .navbar-brand{
+        display: inline;
+    }
+
+    .header-top{
+        display: none;
+    }
+
+    .header-block > .container{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header-content{
+        text-align: center;
+    }
+
+}

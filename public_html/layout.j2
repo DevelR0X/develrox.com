@@ -1,0 +1,155 @@
+{%- set lstr = json.load(io.open('%s/assets/strings/layout.json' % document_root, encoding='utf-8')) -%}
+{%- set lang = uri.split('/')[1] -%}
+{%- set lstr = lstr[lang] -%}
+<!DOCTYPE html>
+<html lang="{% if lang == 'es' %}es_CL{% else %}en_US{% endif %}">
+    <!--
+    ██████╗ ███████╗██╗   ██╗███████╗██╗     ██████╗  ██████╗ ██╗  ██╗ ©
+    ██╔══██╗██╔════╝██║   ██║██╔════╝██║     ██╔══██╗██╔═══██╗╚██╗██╔╝
+    ██║  ██║█████╗  ██║   ██║█████╗  ██║     ██████╔╝██║   ██║ ╚███╔╝ 
+    ██║  ██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║     ██╔══██╗██║   ██║ ██╔██╗ 
+    ██████╔╝███████╗ ╚████╔╝ ███████╗███████╗██║  ██║╚██████╔╝██╔╝ ██╗
+    ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+    -->
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+        <title>{{ lstr['title'] }} - {% block title %}{% endblock %}</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/layouts/main/images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/layouts/main/images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/layouts/main/images/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <link href="/assets/vendors/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/vendors/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="/assets/layouts/main/css/style.css" rel="stylesheet" />
+
+        <script src="/assets/vendors/js/jquery-3.4.1.min.js"></script>
+        <script src="/assets/vendors/js/bootstrap.min.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-163433920-1"></script>
+        <script src="/assets/layouts/main/js/script.js"></script>
+        
+        {% block header %}{% endblock %}
+
+        <meta property="og:title" content="{{ lstr['og']['title'] }}" />
+        <meta property="og:image" content="/assets/template/images/og-image.png" />
+        <meta property="og:description" content="{{ lstr['og']['description'] }}" />
+    </head>
+    <body>
+        <div class="header-block text-light">
+            <div class="container">
+
+                <div class="header-top row pb-4 pt-4">
+                    <div class="col-md-3 logo">Devel<span>R0X</span></div>
+                    <div class="col-md-2 text-center">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <a class="ml-2 text-white" data-lang="es" href="/es/"><u>ES</u></a>
+                        <a class="ml-2 text-white" data-lang="en" href="/en/"><u>EN</u></a>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span class="font-weight-bold ml-2">{{ lstr['contact']['email'] }}</span>
+                        <i class="ml-4 fa fa-phone" aria-hidden="true"></i>
+                        <span class="font-weight-bold ml-2">{{ lstr['contact']['phone'] }}</span>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <a download class="btn btn-outline-secondary" href="{{ lstr['presentation']['url'] }}">
+                            {{ lstr['presentation']['title'] }}
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand logo" href="{{ lstr['menu']['home']['url'] }}">
+                        Devel<span>R0X</span>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#top-menu"
+                        aria-controls="top-menu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="top-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active pl-3 pr-3">
+                                <a class="nav-link" href="{{ lstr['menu']['home']['url'] }}">
+                                    {{ lstr['menu']['home']['title'] }}
+                                </a>
+                            </li>
+                            <li class="nav-item active pl-3 pr-3">
+                                <a class="nav-link" href="{{ lstr['menu']['development']['url'] }}">
+                                    {{ lstr['menu']['development']['title'] }}
+                                </a>
+                            </li>
+                            <li class="nav-item active pl-3 pr-3">
+                                <a class="nav-link" href="{{ lstr['menu']['cybersecurity']['url'] }}">
+                                    {{ lstr['menu']['cybersecurity']['title'] }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="header-content">
+                    {% block top %}{% endblock %}
+                </div>
+            </div>
+        </div>
+
+        {% block content %}{% endblock %}
+
+        <footer class="bg-dark text-light">
+            <div class="jumbotron bg-dark mb-0">
+                <div class="container">
+                    <div class="logo text-center">
+                        - Devel<span>R0X</span> -
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="mb-4">
+                                {{ lstr['more-info']['title'] }}
+                            </h3>
+                            <p class="text-secondary">
+                                {{ lstr['more-info']['message'] }}
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="mb-4">
+                                {{ lstr['contact']['title'] }}
+                            </h3>
+                            <ul class="text-secondary">
+                                <li>
+                                    <i aria-hidden="true" class="fa fa-envelope-o fa-fw"></i>
+                                    {{ lstr['contact']['email'] }}
+                                </li>
+                                <li>
+                                    <i aria-hidden="true" class="fa fa-phone fa-fw"></i>
+                                    {{ lstr['contact']['phone'] }}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="mb-4">
+                                {{ lstr['attention-hours']['title'] }}
+                            </h3>
+                            <div class="text-secondary">
+                                <p>
+                                    {{ lstr['attention-hours']['days'] }}<br />
+                                    {{ lstr['attention-hours']['location'] }}<br />
+                                    {{ lstr['attention-hours']['sla'] }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

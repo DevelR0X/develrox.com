@@ -1,0 +1,20 @@
+RewriteEngine On
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^$ /es/ [R,L]
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ /en/ [R,L]
+
+ErrorDocument 404 /404.j2
+ErrorDocument 403 /403.j2
+
+# Translations
+
+RewriteRule ^es/$ /index.j2 [L]
+RewriteRule ^es/servicios/desarrollo-de-software/$ /services/development.j2 [L]
+RewriteRule ^es/servicios/ciberseguridad/$ /services/cybersecurity.j2 [L]
+
+RewriteRule ^en/$ /index.j2 [L]
+RewriteRule ^en/services/software-development/$ /services/development.j2 [L]
+RewriteRule ^en/services/cybersecurity/$ /services/cybersecurity.j2 [L]

@@ -1,0 +1,19 @@
+{
+    "name":"DevelR0X",
+    "short_name":"DevelR0X",
+    "icons":[
+        {
+            "src":"/assets/layouts/main/images/android-chrome-192x192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"/assets/layouts/main/images/android-chrome-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ],
+    "theme_color":"##6ebbcc",
+    "background_color":"#202b3d",
+    "display":"standalone"
+}

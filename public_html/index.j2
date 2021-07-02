@@ -1,0 +1,120 @@
+{% extends '/layout.j2' %}
+
+{% set str = json.load(io.open('%s/assets/strings/main.json' % document_root, encoding='utf-8')) %}
+{% set lang = uri.split('/')[1] %}
+{% set str = str[lang] %}
+
+{% block title %}{{ str['title'] }}{% endblock %}
+
+{% block header %}
+    <link href="/assets/fragments/main/css/style.css" rel="stylesheet" />
+{% endblock %}
+
+{% block top %}
+    <p class="logo-top mb-4 lead">{{ str['header']['title'] }}</p>
+    <h1 class="logo">
+        Devel<span>R0X</span>
+    </h1>
+    <p class="logo-bottom lead">
+        {{ str['header']['message'] }}
+    </p>
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid jumbotron-bg-light mb-0">
+        <div class="container">
+            <h1 class="mb-5">{{ str['content']['introduction']['title'] }}</h1>
+            <p class="lead">
+                {{ str['content']['introduction']['lead'] }}
+            </p>
+            <p>
+                {{ str['content']['introduction']['message'] }}
+            </p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-icons mb-0 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-4 pb-4">
+                    <div class="text-primary">
+                        <i aria-hidden="true" class="fa fa-code fa-5x pt-2 pb-2"></i>
+                        <a href="{{ str['content']['services']['development']['url'] }}">
+                            <h3 class="mt-2 mb-4">
+                                {{ str['content']['services']['development']['title'] }}
+                            </h3>
+                        </a>
+                    </div>
+                    <p>
+                        {{ str['content']['services']['development']['message'] }}
+                    </p>
+                    <a class="btn btn-primary mt-4" href="{{ str['content']['services']['development']['url'] }}">
+                        {{ str['read-more'] }}
+                    </a>
+                </div>
+                <div class="col-md-6 pt-4 pb-4">
+                    <div class="text-primary">
+                        <i aria-hidden="true" class="fa fa-shield fa-5x pt-2 pb-2"></i>
+                        <a href="{{ str['content']['services']['cybersecurity']['url'] }}">
+                            <h3 class="mt-2 mb-4">
+                                {{ str['content']['services']['cybersecurity']['title'] }}
+                            </h3>
+                        </a>
+                    </div>
+                    <p>
+                        {{ str['content']['services']['cybersecurity']['message'] }}
+                    </p>
+                    <a class="btn btn-primary mt-4" href="{{ str['content']['services']['cybersecurity']['url'] }}">
+                        {{ str['read-more'] }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="brochure" class="jumbotron jumbotron-fluid bg-dark text-light text-center">
+        <div class="container">
+            <h1>{{ str['content']['informative']['title'] }}</h1>
+            <p class="lead mt-4">
+                {{ str['content']['informative']['message'] }}
+            </p>
+            <a download class="btn btn-primary pl-4 pr-4 mt-4" href="{{ str['content']['informative']['url'] }}">
+                {{ str['content']['informative']['button'] }}
+            </a>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg-light jumbotron-icons-rounded text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i aria-hidden="true" class="fa fa-line-chart fa-4x"></i>
+                    <h3 class="mt-5 mb-4">
+                        {{ str['content']['benefits']['costs']['title'] }}
+                    </h3>
+                    <p class="text-justify">
+                        {{ str['content']['benefits']['costs']['message'] }}
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <i aria-hidden="true" class="fa fa-gavel fa-4x"></i>
+                    <h3 class="mt-5 mb-4">
+                        {{ str['content']['benefits']['compliance']['title'] }}
+                    </h3>
+                    <p class="text-justify">
+                        {{ str['content']['benefits']['compliance']['message'] }}
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <i aria-hidden="true" class="fa fa-handshake-o fa-4x"></i>
+                    <h3 class="mt-5 mb-4">
+                        {{ str['content']['benefits']['confidence']['title'] }}
+                    </h3>
+                    <p class="text-justify">
+                        {{ str['content']['benefits']['confidence']['message'] }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
