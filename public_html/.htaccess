@@ -1,13 +1,25 @@
 RewriteEngine On
 
+
+# Redirect to home
+
+RewriteRule ^layout\.j2.*$ / [R,L]
+
+
+# Default error pages
+
+ErrorDocument 404 /404.j2
+ErrorDocument 403 /403.j2
+
+
+# Calculate current user language
+
 RewriteCond %{HTTP:Accept-Language} ^es [NC]
 RewriteRule ^$ /es/ [R,L]
 
 RewriteCond %{HTTP:Accept-Language} ^en [NC]
 RewriteRule ^$ /en/ [R,L]
 
-ErrorDocument 404 /404.j2
-ErrorDocument 403 /403.j2
 
 # Translations
 
