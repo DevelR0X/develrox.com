@@ -35,7 +35,7 @@
         "attention-hours": {
             "title": "Horario de atención",
             "days": "Lunes a Viernes desde 9:00 a.m. a 6:00 p.m.",
-            "location": "Santiago de Chile, CLT UTC/GMT -4",
+            "location": "Avenida Once de Septiembre 1945, Oficina 919, Santiago de Chile, CLT UTC/GMT -4",
             "sla": "Emergencias 24/7"
         }
     },
@@ -75,7 +75,7 @@
         "attention-hours": {
             "title": "Attention hours",
             "days": "Monday to Friday from 9:00 a.m. to 6:00 p.m.",
-            "location": "Santiago of Chile, CLT UTC/GMT -4",
+            "location": "Avenue Once de Septiembre 1945, Office 919 Santiago of Chile, CLT UTC/GMT -4",
             "sla": "24/7 Emergencies"
         }
     }
