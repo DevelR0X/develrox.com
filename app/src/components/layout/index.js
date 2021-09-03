@@ -6,6 +6,7 @@ import CybersecurityHeaderFragment from '../fragments/services/cybersecurity/hea
 import DevelopmentFragmentBody from '../fragments/services/development/body';
 import DevelopmentHeaderFragment from '../fragments/services/development/header';
 import Str from './strings.json';
+import './style.css';
 
 
 export default (class Layout extends Component {
@@ -14,7 +15,11 @@ export default (class Layout extends Component {
         super(props);
 
         this.state = {
-            fragment: { body: MainFragmentBody, header: MainFragmentHeader }
+            fragment: {
+                body: MainFragmentBody,
+                header: MainFragmentHeader,
+                id: 'main-fragment'
+            }
         };
 
         this.str = Str.es;
@@ -28,15 +33,27 @@ export default (class Layout extends Component {
     setFragment(url) {
         if(url === '/') {
             this.setState({
-                fragment: { body: MainFragmentBody, header: MainFragmentHeader }
+                fragment: {
+                    id: 'main-fragment',
+                    body: MainFragmentBody,
+                    header: MainFragmentHeader
+                }
             });
         } else if(url === '/es/servicios/ciberseguridad/') {
             this.setState({
-                fragment: { body: CybersecurityFragmentBody, header: CybersecurityHeaderFragment }
+                fragment: {
+                    id: 'cybersecurity-fragment',
+                    body: CybersecurityFragmentBody,
+                    header: CybersecurityHeaderFragment
+                }
             });
         } else if(url === '/es/servicios/desarrollo-de-software/') {
             this.setState({
-                fragment: { body: DevelopmentFragmentBody, header: DevelopmentHeaderFragment }
+                fragment: {
+                    id: 'development-fragment',
+                    body: DevelopmentFragmentBody,
+                    header: DevelopmentHeaderFragment
+                }
             });
         } else {
             console.error(`Invalid URL: ${url}`)
@@ -48,7 +65,7 @@ export default (class Layout extends Component {
     render() {
         return (
             <div>
-                <div className="header-block text-light" id={this.state.fragment.header.name}>
+                <div className="header-block text-light" id={`${this.state.fragment.id}-header`}>
                     <div className="container">
 
                         <div className="header-top row pb-4 pt-4">
@@ -114,7 +131,7 @@ export default (class Layout extends Component {
                         </div>
                     </div>
                 </div>
-                <div id={this.state.fragment.body.name}>
+                <div id={`${this.state.fragment.id}-body`}>
                     <this.state.fragment.body />
                 </div>
                 <footer className="bg-dark text-light">
