@@ -1,0 +1,16 @@
+{
+    "es": {
+        "title": "Desarrollo de Software",
+        "header": {
+            "title": "Desarrollo de Software Seguro",
+            "message": "Soluciones de desarrollo altamente seguras y profesionales."
+        }
+    },
+    "en": {
+        "title": "Software Development",
+        "header": {
+            "title": "Secure Software Development",
+            "message": "Highly secure and professional software solutions."
+        }
+    }
+}

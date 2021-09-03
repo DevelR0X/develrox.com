@@ -1,0 +1,96 @@
+{
+    "es": {
+        "title": "Seguridad Informática",
+        "content": {
+            "benefits": {
+                "ethics": {
+                    "title": "Con ética",
+                    "message": "Nuestro equipo de trabajo cuenta con un proceso estricto de selecci&oacute;n cumpliendo el resguardo de la información."
+                },
+                "knowledge": {
+                    "title": "Con conocimiento",
+                    "message": "Contamos con ámplios conocimientos sobre distintas tecnolog&iacute;as que nos ayuda a ser más eficientes."
+                },
+                "compliance": {
+                    "title": "Con cumplimiento",
+                    "message": "Cumplimos con las normas necesarias para aprobar los procesos y controles de seguridad Owasp, ASVS y PCI."
+                }
+            },
+            "informative": {
+                "title": "Vivimos la seguridad",
+                "message": "DevelR0X se posiciona un paso adelante y combina distintas disciplinas para identificar las debilidades y agujeros de seguridad de su negocio, creamos planes de mitigación y corrección oportunos para protegerlo de las amenazas de Internet."
+            },
+            "details": {
+                "title": "Servicios de Seguridad Informática",
+                "manual": {
+                    "title": "Ethical Hacking Manual",
+                    "message": "Evaluamos la seguridad de un activo con una prueba de penetraci&oacute;n manual y personalizada, orquestando y ejecutando ataques reales con el cuidado de no afectar el funcionamiento de sus activos. Nuestro equipo de seguridad est&aacute; compuesto por profesionales en ciberseguridad especializados en hacking ético para ayudarlo a protegerse de amenazas del mundo real. Realizamos pruebas para descubrir fallas y debilidades en sus defensas de seguridad antes que un delincuente lo haga."
+                },
+                "modes": {
+                    "whiteBox": {
+                        "title": "An&aacute;lisis c&oacute;digo fuente",
+                        "subtitle": "Flujos y Arquitectura de Software",
+                        "message": "Contamos con los conocimientos necesarios para un Desarrollo de Software Seguro, lo cual nos permite ser áptos para el análisis de seguridad sobre todas sus fases de desarrollo y diseño tanto en su metodología Tradicional como Agile, transaccional y anal&iacute;tica."
+                    },
+                    "applicative": {
+                        "title": "Análisis aplicativo",
+                        "subtitle": "WEB / Mobile",
+                        "message": "Nos adelantamos al delincuente informático buscando y detectando los riesgos de seguridad en tus servicios y aplicaciones. Te apoyamos entregando soluciones a tus &aacute;reas de tecnología a traves de mejoras en los procesos, buenas prácticas, estandarizaciones y sentido común acorde a tu negocio."
+                    },
+                    "perimeter": {
+                        "title": "Análisis perimetral",
+                        "subtitle": "Redes, Infraestructura y Sistemas",
+                        "message": "DevelR0X cuenta con un equipo de trabajo integral y profesional con conocimientos específicos para el Análisis de Seguridad de Redes, Infraestructura y Sistemas gracias a su basta experiencia en el área de Retail y Banca entre otros."
+                    }
+                }
+            }
+        }
+    },
+    "en": {
+        "title": "Cybersecurity",
+        "content": {
+            "benefits": {
+                "ethics": {
+                    "title": "With ethics",
+                    "message": "Our team has a strict selection process complying with the information safeguard."
+                },
+                "knowledge": {
+                    "title": "With knowledge",
+                    "message": "We have extensive knowledge of different technologies that helps us to be more efficient."
+                },
+                "compliance": {
+                    "title": "With compliance",
+                    "message": "We comply with the necessary regulations to approve Owasp, ASVS and PCI security processes and controls."
+                }
+            },
+            "informative": {
+                "title": "We live security",
+                "message": "DevelR0X takes a step forward and combines different disciplines to identify weaknesses and security holes in your business, we create timely mitigation and correction plans to protect you from Internet threats."
+            },
+            "details": {
+                "title": "Cybersecrity Services",
+                "manual": {
+                    "title": "Manual Penetration Testing",
+                    "message": "We evaluate the security of an asset with a manual and personalized penetration test, orchestrating and executing real attacks, taking care not to affect the operation of its assets. Our security team is comprised of cybersecurity professionals specialized in ethical hacking to help protect you from real-world threats. We test to discover flaws and weaknesses in your security defenses before a criminal does."
+                },
+                "modes": {
+                    "whiteBox": {
+                        "title": "Source code analysis",
+                        "subtitle": "Software Flows and Architecture",
+                        "message": "We have the necessary knowledge for a Secure Software Development, which allows us to be suitable for security analysis on all its development and design phases, both in its Traditional and Agile, transactional and analytical methodology."
+                    },
+                    "applicative": {
+                        "title": "Application analysis",
+                        "subtitle": "WEB / Mobile",
+                        "message": "We are ahead of the computer criminal looking for and detecting security risks in your services and applications. We support you by providing solutions to your technology areas through process improvements, good practices, standardizations and common sense according to your business."
+                    },
+                    "perimeter": {
+                        "title": "Perimeter Analysis",
+                        "subtitle": "Networks, Infrastructure and Systems",
+                        "message": "Develrox has a comprehensive and professional team with specific knowledge for Network, Infrastructure and Systems Security Analysis thanks to its vast experience in the area of Retail and Banking, among others."
+                    }
+                }
+            }
+        }
+    }
+}

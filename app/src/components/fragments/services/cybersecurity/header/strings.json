@@ -1,0 +1,16 @@
+{
+    "es": {
+        "title": "Seguridad Informática",
+        "header": {
+            "title": "Ciberseguridad",
+            "message": "Potencie y proteja su negocio de las principales amenazas del mundo real."
+        }
+    },
+    "en": {
+        "title": "Cybersecurity",
+        "header": {
+            "title": "Cybersecurity",
+            "message": "Empower and protect your business from the top real-world threats."
+        }
+    }
+}

@@ -1,0 +1,37 @@
+#MainFragmentHeader.header-block {
+    background-image: url(./bg.jpg);
+    background-size: cover;
+}
+
+#MainFragmentHeader .header-content {
+    padding: 220px 50px;
+}
+
+#MainFragmentHeader h1.logo {
+    font-size: 125px;
+    line-height: 90px;
+    margin: 40px 0;
+}
+
+/* Mobile */
+@media (max-width: 991px){
+
+    #MainFragmentHeader .header-content{
+        padding: 120px 20px;
+    }
+
+    #MainFragmentHeader h1.logo{
+        font-size: 90px;
+    }
+}
+
+/* Ultra small */
+@media (max-width: 533px){
+    #MainFragmentHeader .header-content{
+        padding: 90px 5px;
+    }
+
+    #MainFragmentHeader h1.logo{
+        font-size: 70px;
+    }
+}

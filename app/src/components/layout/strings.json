@@ -1,0 +1,80 @@
+{
+    "es": {
+        "title": "DevelR0X",
+        "og": {
+            "title": "DevelR0X",
+            "description": "Desarrollo de Software y Ciberseguridad"
+        },
+        "presentation": {
+            "title": "Presentación",
+            "url": "/assets/docs/DevelR0X-Presentacion-2020-01-01.pdf"
+        },
+        "menu": {
+            "home": {
+                "title": "Inicio",
+                "url": "/es/"
+            },
+            "development": {
+                "title": "Desarrollo",
+                "url": "/es/servicios/desarrollo-de-software/"
+            },
+            "cybersecurity": {
+                "title": "Ciberseguridad",
+                "url": "/es/servicios/ciberseguridad/"
+            }
+        },
+        "moreInfo": {
+            "title": "¿Necesita información?",
+            "message": "Si desea más información sobre nuestros servicios no dude en contactarnos."
+        },
+        "contact": {
+            "title": "Contacto",
+            "email": "info@develrox.com",
+            "phone": "+56 2 2979 1072"
+        },
+        "attentionHours": {
+            "title": "Atención",
+            "location": "Avenida Once de Septiembre 1945, Oficina 919, Santiago de Chile, CLT UTC/GMT -4",
+            "sla": "Emergencias 24/7"
+        }
+    },
+    "en": {
+        "title": "DevelR0X",
+        "og": {
+            "title": "DevelR0X",
+            "description": "Software Development and Cybersecurity"
+        },
+        "presentation": {
+            "title": "Presentation",
+            "url": "/assets/docs/DevelR0X-Presentation-2020-01-01.pdf"
+        },
+        "menu": {
+            "home": {
+                "title": "Home",
+                "url": "/en/"
+            },
+            "development": {
+                "title": "Development",
+                "url": "/en/services/software-development/"
+            },
+            "cybersecurity": {
+                "title": "Cybersecurity",
+                "url": "/en/services/cybersecurity/"
+            }
+        },
+        "moreInfo": {
+            "title": "More information?",
+            "message": "If you want more information about our services, do not hesitate to contact us."
+        },
+        "contact": {
+            "title": "Contact",
+            "email": "info@develrox.com",
+            "phone": "+56 2 2979 1072"
+        },
+        "attentionHours": {
+            "title": "Attention",
+            "location": "Avenue Once de Septiembre 1945, Office 919 Santiago of Chile, CLT UTC/GMT -4",
+            "sla": "24/7 Emergencies"
+        }
+    }
+}

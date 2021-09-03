@@ -1,0 +1,9 @@
+#MainFragmentBody #brochure {
+    padding: 220px 0;
+    background-image: url(./bg.jpg);
+    background-color: #444;
+    color: #eee;
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    text-shadow: 2px 2px 6px #25323c;
+}
