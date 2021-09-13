@@ -60,6 +60,7 @@ export default (class Layout extends Component {
         }
 
         window.history.pushState({}, '', url);
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -132,7 +133,7 @@ export default (class Layout extends Component {
                     </div>
                 </div>
                 <div id={`${this.state.fragment.id}-body`}>
-                    <this.state.fragment.body />
+                    <this.state.fragment.body onSetFragment={this.setFragment} />
                 </div>
                 <footer className="bg-dark text-light">
                     <div className="jumbotron bg-dark mb-0">

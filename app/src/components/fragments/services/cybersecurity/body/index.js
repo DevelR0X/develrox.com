@@ -8,6 +8,7 @@ export default (class CybersecurityFragmentBody extends Component {
     constructor(props) {
         super(props);
 
+        this.onSetFragment = props.onSetFragment;
         this.state = { };
         this.str = Str.es;
     }

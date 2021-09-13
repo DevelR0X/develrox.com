@@ -5,11 +5,11 @@
             "benefits": {
                 "ethics": {
                     "title": "Con ética",
-                    "message": "Nuestro equipo de trabajo cuenta con un proceso estricto de selecci&oacute;n cumpliendo el resguardo de la información."
+                    "message": "Nuestro equipo de trabajo cuenta con un proceso estricto de selección cumpliendo el resguardo de la información."
                 },
                 "knowledge": {
                     "title": "Con conocimiento",
-                    "message": "Contamos con ámplios conocimientos sobre distintas tecnolog&iacute;as que nos ayuda a ser más eficientes."
+                    "message": "Contamos con ámplios conocimientos sobre distintas tecnologías que nos ayuda a ser más eficientes."
                 },
                 "compliance": {
                     "title": "Con cumplimiento",
@@ -24,18 +24,18 @@
                 "title": "Servicios de Seguridad Informática",
                 "manual": {
                     "title": "Ethical Hacking Manual",
-                    "message": "Evaluamos la seguridad de un activo con una prueba de penetraci&oacute;n manual y personalizada, orquestando y ejecutando ataques reales con el cuidado de no afectar el funcionamiento de sus activos. Nuestro equipo de seguridad est&aacute; compuesto por profesionales en ciberseguridad especializados en hacking ético para ayudarlo a protegerse de amenazas del mundo real. Realizamos pruebas para descubrir fallas y debilidades en sus defensas de seguridad antes que un delincuente lo haga."
+                    "message": "Evaluamos la seguridad de un activo con una prueba de penetración manual y personalizada, orquestando y ejecutando ataques reales con el cuidado de no afectar el funcionamiento de sus activos. Nuestro equipo de seguridad está compuesto por profesionales en ciberseguridad especializados en hacking ético para ayudarlo a protegerse de amenazas del mundo real. Realizamos pruebas para descubrir fallas y debilidades en sus defensas de seguridad antes que un delincuente lo haga."
                 },
                 "modes": {
                     "whiteBox": {
-                        "title": "An&aacute;lisis c&oacute;digo fuente",
+                        "title": "Análisis código fuente",
                         "subtitle": "Flujos y Arquitectura de Software",
-                        "message": "Contamos con los conocimientos necesarios para un Desarrollo de Software Seguro, lo cual nos permite ser áptos para el análisis de seguridad sobre todas sus fases de desarrollo y diseño tanto en su metodología Tradicional como Agile, transaccional y anal&iacute;tica."
+                        "message": "Contamos con los conocimientos necesarios para un Desarrollo de Software Seguro, lo cual nos permite ser áptos para el análisis de seguridad sobre todas sus fases de desarrollo y diseño tanto en su metodología Tradicional como Agile, transaccional y analítica."
                     },
                     "applicative": {
                         "title": "Análisis aplicativo",
                         "subtitle": "WEB / Mobile",
-                        "message": "Nos adelantamos al delincuente informático buscando y detectando los riesgos de seguridad en tus servicios y aplicaciones. Te apoyamos entregando soluciones a tus &aacute;reas de tecnología a traves de mejoras en los procesos, buenas prácticas, estandarizaciones y sentido común acorde a tu negocio."
+                        "message": "Nos adelantamos al delincuente informático buscando y detectando los riesgos de seguridad en tus servicios y aplicaciones. Te apoyamos entregando soluciones a tus áreas de tecnología a traves de mejoras en los procesos, buenas prácticas, estandarizaciones y sentido común acorde a tu negocio."
                     },
                     "perimeter": {
                         "title": "Análisis perimetral",

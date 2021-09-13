@@ -6,4 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     gtag('js', new Date());
     gtag('config', 'UA-163433920-1');
-}), false);
+}, false);

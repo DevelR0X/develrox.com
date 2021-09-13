@@ -7,6 +7,7 @@ export default (class MainFragmentBody extends Component {
     constructor(props) {
         super(props);
 
+        this.onSetFragment = props.onSetFragment;
         this.state = { };
         this.str = Str.es;
     }
@@ -32,34 +33,30 @@ export default (class MainFragmentBody extends Component {
                             <div className="col-md-6 pt-4 pb-4">
                                 <div className="text-primary">
                                     <i aria-hidden="true" className="fa fa-code fa-5x pt-2 pb-2"></i>
-                                    <a href="{this.str.content.services.development.url}">
-                                        <h3 className="mt-2 mb-4">
-                                            {this.str.content.services.development.title}
-                                        </h3>
-                                    </a>
+                                    <h3 className="mt-2 mb-4">
+                                        {this.str.content.services.development.title}
+                                    </h3>
                                 </div>
                                 <p>
                                     {this.str.content.services.development.message}
                                 </p>
-                                <a className="btn btn-primary mt-4" href="{this.str.content.services.development.url}">
+                                <button className="btn btn-primary mt-4" onMouseDown={event => this.onSetFragment('/es/servicios/desarrollo-de-software/')}>
                                     {this.str.readMore}
-                                </a>
+                                </button>
                             </div>
                             <div className="col-md-6 pt-4 pb-4">
                                 <div className="text-primary">
                                     <i aria-hidden="true" className="fa fa-shield fa-5x pt-2 pb-2"></i>
-                                    <a href="{this.str.content.services.cybersecurity.url}">
-                                        <h3 className="mt-2 mb-4">
-                                            {this.str.content.services.cybersecurity.title}
-                                        </h3>
-                                    </a>
+                                    <h3 className="mt-2 mb-4">
+                                        {this.str.content.services.cybersecurity.title}
+                                    </h3>
                                 </div>
                                 <p>
                                     {this.str.content.services.cybersecurity.message}
                                 </p>
-                                <a className="btn btn-primary mt-4" href="{this.str.content.services.cybersecurity.url}">
+                                <button className="btn btn-primary mt-4" onMouseDown={event => this.onSetFragment('/es/servicios/ciberseguridad/')}>
                                     {this.str.readMore}
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -71,7 +68,7 @@ export default (class MainFragmentBody extends Component {
                         <p className="lead mt-4">
                             {this.str.content.informative.message}
                         </p>
-                        <a download className="btn btn-primary pl-4 pr-4 mt-4" href="{this.str.content.informative.url}">
+                        <a download className="btn btn-primary pl-4 pr-4 mt-4" href="/assets/docs/DevelR0X-Presentacion-2020-01-01.pdf">
                             {this.str.content.informative.button}
                         </a>
                     </div>
