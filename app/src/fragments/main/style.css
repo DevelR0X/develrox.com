@@ -1,0 +1,16 @@
+.main-fragment header {
+    padding: 50pt 0;
+}
+
+.main-fragment header {
+    font-weight: 300;
+    font-family: 'Open Sans Light';
+    background-image: url('./header-bg.jpg');
+    background-position: center right;
+    background-color: #09101a;
+    background-repeat: no-repeat;
+}
+
+.main-fragment .radar-chart {
+    max-height: 400px;
+}

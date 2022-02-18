@@ -1,0 +1,12 @@
+.nav-component .navbar-dark .navbar-nav .active>.nav-link,
+.nav-component .navbar-dark .navbar-nav .nav-link.active,
+.nav-component .navbar-dark .navbar-nav .nav-link.show,
+.nav-component .navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--rx-primary);
+}
+
+.nav-component .navbar-brand {
+    font-family: 'Roboto Mono';
+    font-weight: 300;
+    font-size: 25pt;
+}

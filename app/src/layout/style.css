@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root {
+    --rx-primary: rgba(129, 212, 26, 1);
+}
+
+.rx-text-primary {
+    color: var(--rx-primary);
+}
+
+.rx-bg-dark-0 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rx-bg-dark-1 {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body{
+    /*font-family: 'Open Sans Light';*/
+    font-family: 'Barlow';
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3,
+.display-4, .display-5, .display-6 {
+    font-family: 'Open Sans Light';
+}
